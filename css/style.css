@@ -9,7 +9,8 @@
 }
 
 html,body {
-    height: 100%;
+    height: 736px;
+    width: 414px;
     overflow: hidden;
 }
 
