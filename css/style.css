@@ -539,7 +539,7 @@ html,body {
 
 #page3 >.p3-blessing {
     position: absolute;
-    bottom: 2px;
+    bottom: 0;
     right: 0;
     left: 0;
     width: 30vw;
