@@ -420,15 +420,12 @@ html,body {
 
 #page3 {
     display: none;
-    transition: .5s;
+    -webkit-transition: .5s linear 5.5s forwards;
+        -ms-transition: .5s linear 5.5s forwards;
+         -o-transition: .5s linear 5.5s forwards;
+            transition: .5s linear 5.5s forwards;
 }
 
-#page3.fadeIn {
-    -webkit-transform: translate(0, -100%);
-        -ms-transform: translate(0, -100%);
-         -o-transform: translate(0, -100%);
-            transform: translate(0, -100%);
-}
 
 #page3 > .bg {
     background: url("../images/p3_bg.jpg")
@@ -467,9 +464,9 @@ html,body {
     height: 41.652vh;
     background: url("../images/p3_couplet_second.png") no-repeat center center;
     background-size: 100%;
-    -webkit-animation: p3_couplet_second .5s linear 5.5s forwards;
-         -o-animation: p3_couplet_second .5s linear 5.5s forwards;
-            animation: p3_couplet_second .5s linear 5.5s forwards;
+    -webkit-animation: p3_couplet_second .5s linear forwards;
+         -o-animation: p3_couplet_second .5s linear forwards;
+            animation: p3_couplet_second .5s linear forwards;
 }
 
 @-webkit-keyframes p3_couplet_second {
@@ -507,9 +504,9 @@ html,body {
     height: 41.652vh;
     background: url("../images/p3_couplet_first.png") no-repeat center center;
     background-size: 100%;
-    -webkit-animation: p3_couplet_first .5s linear 5.5s forwards;
-         -o-animation: p3_couplet_first .5s linear 5.5s forwards;
-            animation: p3_couplet_first .5s linear 5.5s forwards;
+    -webkit-animation: p3_couplet_first .5s linear forwards;
+         -o-animation: p3_couplet_first .5s linear forwards;
+            animation: p3_couplet_first .5s linear forwards;
 }
 
 @-webkit-keyframes p3_couplet_first {
