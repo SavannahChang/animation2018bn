@@ -7,6 +7,21 @@ window.onload = function() {
     var music = document.getElementById("music");
     var audio = document.getElementsByTagName("audio")[0];
 
+    document.addEventListener('touchstart',function (event) {
+                if(event.touches.length>1){
+                    event.preventDefault();
+                }
+            })
+            var lastTouchEnd=0;
+            document.addEventListener('touchend',function (event) {
+                var now=(new Date()).getTime();
+                if(now-lastTouchEnd<=300){
+                    event.preventDefault();
+                }
+                lastTouchEnd=now;
+            }, false);  
+
+
     //當音樂播放完停止時候 自動停止光盤旋轉效果
     audio.addEventListener("ended", function(event) {
         music.setAttribute("class","");
